@@ -1,26 +1,10 @@
-$colorPrimario: #092f87;
-$colorSecundario: brown;
-$colorTerciario: red;
+//GLOBALES
+$colorPrimario: #212529;
+$colorSecundario: white;
 
 * {
   margin: 0;
   padding: 0;
-}
-
-.cabecera {
-  background-color: #092f87;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-}
-
-h1 {
-  color: white;
-}
-
-h2 {
-  color: white;
 }
 
 html {
@@ -31,9 +15,24 @@ body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
 }
+//--------------------------------------------------------------------------------
+// NAVEGACION / HEADER
+.navbar-brand {
+  font-size: large;
+}
+
+.navbar {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+//--------------------------------------------------------------------------------
+// MAIN Y FOOTER
+h2 {
+  color: black;
+}
 
 .cajaPrueba {
-  height: 60rem;
+  height: 80rem;
   background-color: $colorSecundario;
   display: flex;
   justify-content: center;
@@ -41,13 +40,13 @@ body {
 }
 
 .cajaFooter {
-  height: 60rem;
-  background-color: red;
+  height: 40rem;
+  background-color: $colorPrimario;
   display: flex;
   justify-content: center;
   align-items: center;
   h2 {
-    color: blue;
+    color: $colorSecundario;
   }
 }
 

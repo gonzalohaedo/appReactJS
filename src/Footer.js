@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="cajaFooter">
-      <h2>Yo soy el footer</h2>
+      <h2>Yo soy un footer</h2>
     </div>
   );
 }
