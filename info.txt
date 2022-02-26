@@ -1,0 +1,9 @@
+ELECTRON.JS Web a app de escritorio. 
+
+Todos los componentes de React son funciones. 
+Todos los componentes empiezan en mayuscula.
+Todos los componentes siempre tienen que tener un retorno. 
+Un archivo por componente es lo ideal
+
+EXTENSION QUE DIJO EL PROFE
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets

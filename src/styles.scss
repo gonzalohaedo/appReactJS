@@ -1,0 +1,65 @@
+$colorPrimario: #092f87;
+$colorSecundario: green;
+$colorTerciario: red;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cabecera {
+  background-color: #092f87;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cajaPrueba {
+  height: 60rem;
+  background-color: $colorSecundario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajaFooter {
+  height: 60rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: blue;
+  }
+}
+
+/*
+// EJEMPLO DE MIXING
+@mixin nombreDelMixin {
+  height: 60rem;
+  background-color: red;
+  display: flex;
+}
+
+.laClase {
+  @include nombreDelMixin;
+}
+*/
