@@ -17,13 +17,51 @@ body {
 }
 //--------------------------------------------------------------------------------
 // NAVEGACION / HEADER
-.navbar-brand {
-  font-size: large;
+.cajaHeader {
+  display: grid;
+  background-color: $colorPrimario;
+  grid-template-columns: 1fr 2fr 0.5fr;
+  grid-template-rows: 10rem;
+  grid-template-areas: "cajauno cajados cajatres";
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 0.1px solid black;
+  .headerLogo {
+    display: flex;
+    grid-area: cajauno;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerNav {
+    display: flex;
+    grid-area: cajados;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerCart {
+    display: flex;
+    grid-area: cajatres;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.navbar {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.lista {
+  list-style: none;
+  display: flex;
+}
+
+.itemLista {
+  margin: 1.5rem;
+}
+
+.linkLista {
+  color: white;
+  font-style: none;
+}
+
+.iconoCarrito {
+  height: 4rem;
+  width: 4rem;
 }
 //--------------------------------------------------------------------------------
 // MAIN Y FOOTER
@@ -34,6 +72,14 @@ h2 {
 .cajaPrueba {
   height: 80rem;
   background-color: $colorSecundario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajaGreeting {
+  height: 40rem;
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
