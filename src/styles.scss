@@ -70,7 +70,7 @@ h2 {
 }
 
 .cajaPrueba {
-  height: 80rem;
+  height: 40rem;
   background-color: $colorSecundario;
   display: flex;
   justify-content: center;
@@ -94,6 +94,45 @@ h2 {
   align-items: center;
   h2 {
     color: $colorSecundario;
+  }
+}
+
+//--------------------------------------------------------------------------------
+// CAJA CONTADOR | ItemCount.js
+
+.cajaContador {
+  height: 20rem;
+  width: 35rem;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem;
+  grid-template-areas: "cajauno" "cajados" "cajatres";
+  //justify-content: ;
+  align-items: center;
+  .box1 {
+    display: flex;
+    grid-area: cajauno;
+    align-items: center;
+    justify-content: center;
+  }
+  .box2 {
+    display: flex;
+    grid-area: cajados;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .box3 {
+    display: flex;
+    grid-area: cajatres;
+    align-items: center;
+    justify-content: center;
+    button {
+      margin: 1rem;
+    }
+  }
+  button {
+    padding: 1rem;
   }
 }
 
