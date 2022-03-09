@@ -78,14 +78,6 @@ h2 {
   flex-direction: column;
 }
 
-.cajaGreeting {
-  height: 40rem;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .cajaFooter {
   height: 40rem;
   background-color: $colorPrimario;
@@ -95,6 +87,37 @@ h2 {
   h2 {
     color: $colorSecundario;
   }
+}
+//--------------------------------------------------------------------------------
+// COMPONENTE | ItemListContainer.js
+.cajaGreeting {
+  height: 40rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  flex-direction: column;
+}
+//--------------------------------------------------------------------------------
+// COMPONENTE | ItemList.js
+.cajaItemList {
+  height: 40rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+//--------------------------------------------------------------------------------
+// COMPONENTE | Item.js
+.cajaItem {
+  height: 40rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
 }
 
 //--------------------------------------------------------------------------------
