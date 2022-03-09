@@ -17,9 +17,7 @@ function App() {
       <Header />
       <Main nombre="Gonzalo" apellido="Haedo" edad={edad} usuarios={usuarios} />
       <Contador />
-      <ItemListContainer mensaje="Soy el componente ITEMLISTCONTAINER (Mensaje enviado por props)" />
-      <ItemList />
-      <Item />
+      <ItemListContainer />
       <Footer />
     </>
   );

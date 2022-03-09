@@ -97,7 +97,6 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  flex-direction: column;
 }
 //--------------------------------------------------------------------------------
 // COMPONENTE | ItemList.js
@@ -112,12 +111,15 @@ h2 {
 //--------------------------------------------------------------------------------
 // COMPONENTE | Item.js
 .cajaItem {
-  height: 40rem;
+  height: 20rem;
   background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 //--------------------------------------------------------------------------------
