@@ -1,9 +1,10 @@
 function Item(props) {
   return (
     <div className="cajaItem">
-      <h2>{props.id}</h2>
-      <h2>{props.nombre}</h2>
-      <h2>{props.precio}</h2>
+      <img src={props.imagen} alt={props.nombre} />
+      <h2 className="cajaItem--nombre">{props.nombre}</h2>
+      <h2>${props.precio}</h2>
+      <button>Más información</button>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 //GLOBALES
 $colorPrimario: #212529;
 $colorSecundario: white;
+$colorTerciario: #f4eae1;
 
 * {
   margin: 0;
@@ -91,12 +92,11 @@ h2 {
 //--------------------------------------------------------------------------------
 // COMPONENTE | ItemListContainer.js
 .cajaGreeting {
-  height: 40rem;
-  background-color: grey;
+  padding: 5rem;
+  background-color: $colorSecundario;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 //--------------------------------------------------------------------------------
 // COMPONENTE | ItemList.js
@@ -111,17 +111,52 @@ h2 {
 //--------------------------------------------------------------------------------
 // COMPONENTE | Item.js
 .cajaItem {
-  height: 20rem;
-  background-color: grey;
+  background-color: $colorTerciario;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 1rem;
   flex-direction: column;
-  padding: 2rem;
+  padding: 5rem;
   margin: 2rem;
+  img {
+    width: 15rem;
+  }
+  h2 {
+    font-size: medium;
+  }
+  .cajaItem--nombre {
+    padding-top: 2rem;
+  }
+  button {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: small;
+    border: 1px solid grey;
+  }
 }
-
+//--------------------------------------------------------------------------------
+// CAJA ITEM DETAIL CONTAINER | ItemDetailContainer.js
+.cajaItemDetailContainer {
+  padding: 5rem;
+  background-color: $colorPrimario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: white;
+  }
+}
+//--------------------------------------------------------------------------------
+// CAJA ITEM DETAIL | ItemDetail.js
+.cajaItemDetail {
+  padding: 5rem;
+  background-color: $colorTerciario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 //--------------------------------------------------------------------------------
 // CAJA CONTADOR | ItemCount.js
 

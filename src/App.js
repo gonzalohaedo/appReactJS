@@ -4,8 +4,6 @@ import Main from "./Main";
 import Footer from "./Footer";
 import Header from "./Header";
 import Contador from "./Contador";
-import ItemList from "./components/ItemList";
-import Item from "./components/Item";
 
 //3) Tener un componente de React, tener el primer componente creado.
 function App() {
@@ -15,9 +13,8 @@ function App() {
   return (
     <>
       <Header />
-      <Main nombre="Gonzalo" apellido="Haedo" edad={edad} usuarios={usuarios} />
-      <Contador />
       <ItemListContainer />
+      <Main nombre="Gonzalo" apellido="Haedo" edad={edad} usuarios={usuarios} />
       <Footer />
     </>
   );

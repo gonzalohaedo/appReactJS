@@ -17,6 +17,11 @@ function NavBar() {
             Amoladoras
           </a>
         </li>
+        <li className="itemLista">
+          <a href="" className="linkLista">
+            Soldadoras
+          </a>
+        </li>
       </ul>
     </nav>
   );

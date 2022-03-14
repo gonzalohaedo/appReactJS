@@ -6,7 +6,7 @@ import ItemCount from "./components/ItemCount";
 function Main() {
   return (
     <>
-      <ItemCount stock={10} />
+      <ItemCount stock={10} onAdd={(count) => console.log("count", count)} />
     </>
   );
 }

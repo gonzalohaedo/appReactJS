@@ -4,7 +4,14 @@ function ItemList(props) {
   return (
     <>
       {props.productos.map((p) => {
-        return <Item id={p.id} nombre={p.nombre} precio={p.precio} />;
+        return (
+          <Item
+            id={p.id}
+            nombre={p.nombre}
+            precio={p.precio}
+            imagen={p.imagen}
+          />
+        );
       })}
     </>
   );
